@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-color: rgb(42, 43, 43);
+        
+        }
+        form{
+            background-color: rgb(149, 145, 139);
+            margin-left: 50vh;
+            margin-top: 10vh;
+            width: 90vh;
+            height: 50vh;
+            padding: 10vh;
+            border-radius: 5px;
+        }
+        h1{
+               margin-left: 50vh; 
+               text-transform: capitalize;
+               font-size: 5vh;
+               font-family: serif;
+               color: aliceblue;
+
+        }
+        div{
+            font-size: 3vh;    
+            margin-top: 5vh;  
+            text-transform: capitalize;      
+        }
+        button{
+            width: 30vh;
+            min-height: 5vh;
+            border-radius: 7px;
+            font-size: 3vh;
+            color: white;
+            margin-top: 2vh;
+            background: black;
+        }
+        #username{
+            width: 40vh;
+            height: 4vh;
+            border-radius: 2px;
+            background-color: rgb(59, 61, 62);
+            color: white;
+            font-size: 16px;
+        }
+     
+
+    </style>
+</head>
+<body>
+    
+    <h1>personal information</h1>
+
+<form  name="userinfo" id="holdinfo">
+     
+    <input type="text" name="usernmae" placeholder="enter you name" id="username" >
+    <br><br><br>
+  <label >  <input type="radio" name="gender" value="Male" id="male"> Male</label>
+  <label > <input type="radio" name="gender" value="Female" id="female"> Female</label>
+<br><br>
+<button type="button" name="send" onclick="showinfo()">Submit</button>
+
+<br><br>
+<div name="return" id="result"></div>
+
+
+</form>
+
+<script>
+    function showinfo(){
+        let user_name = document.getElementById("username").value;
+        let option1 = document.getElementById("male");
+        let option2 = document.getElementById("female");
+        let display = document.getElementById("result");
+
+
+
+
+let getinfo
+
+
+        if(option1.checked){
+            
+getinfo = option1.value;
+        }
+        else if(option2.checked){
+            getinfo = option2.value;
+        }
+        else{
+            getinfo = "gender is not specified";
+        }
+
+        display.innerHTML="your name is, " + " " + user_name + '<br>' + "you are, " + " " + getinfo;
+        
+        if(!user_name){
+            alert("all field are requiered")
+        }
+
+    }
+</script>
+
+</body>
+</html>
