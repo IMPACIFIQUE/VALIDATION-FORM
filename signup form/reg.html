@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regstration_form</title>
+</head>
+
+<style>
+    ::-webkit-scrollbar{
+        width: 1vh;
+        background-color: rgb(243, 243, 244);
+
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: black;
+        height: 2vh;
+        border-top-right-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+        
+    }
+   
+    body{
+background: linear-gradient(45deg,rgb(207, 172, 172),rgb(125, 125, 171));
+overflow-x: hidden;
+
+    }
+    h1{
+        margin-left: 60vh;
+        background: linear-gradient(45deg,rgb(4, 3, 3),rgb(0, 0, 255),rgb(0, 17, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4.5vh;
+        text-transform: capitalize;
+    }
+    #container{
+
+        background-color: rgb(30, 29, 29);
+        width: 80vh;
+        height: 90vh;
+        padding-bottom: 3vh;
+        padding-left: 5vh;
+        padding-top: 7vh;
+        margin-left: 60vh;
+        border-radius: 2vh;
+    }
+    label{
+        color: aliceblue;
+        font-size: 2.7vh;
+        text-transform: capitalize;
+        text-shadow: 3px 3px 3px rgb(2, 2, 2);
+    }
+    .sex{
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 1px rgb(32, 31, 31);
+        font-size: 3vh;
+    }
+    input{
+        width: 310px;
+        height: 3.5vh;
+        padding: 2px;
+        border-radius: 6px;
+        background-color: rgb(252, 252, 252);
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    ::placeholder{
+        font-size: 2vh;
+        text-align: center;
+        margin-left: 15vh;
+    }
+    select{
+        width: 15vh;
+        height: 3vh;
+        border-radius:5px ;
+        margin-left: 8vh;
+        background-color: rgb(178, 181, 197);
+        color: rgb(0, 0, 0);
+        
+
+    }
+    
+
+    .password1{
+        margin-left: 10vh;
+        background-color: rgb(252, 252, 252);
+
+    }
+        
+    .password2{ 
+        margin-left: 3px;
+        background-color: rgb(252, 252, 252);
+    }
+    .location{
+        margin-left: 12vh;
+    }
+    .phone{
+        margin-left: 5vh;
+    }
+    .email{
+        margin-left: 14vh;
+    }
+    .name1{
+        margin-left: 8vh;
+    }
+    .name2{
+        margin-left: 5vh;
+    }
+    .inptsex{
+        width: 15px;
+        height: 15px;
+}
+.inptsex2{
+        width: 13px;
+        height: 13px;
+        margin-left: 5vh;
+
+}
+.submit{
+    width: 440px;
+    height: 8vh ;
+    color:whitesmoke;
+    font-size: 3.3vh;
+    text-shadow: 1px 1px 1px black;
+    background-color: black;
+    text-transform: capitalize;
+    border-radius: 3vh;
+    filter: drop-shadow(0 0 1vh rgb(0, 0, 0));
+    font-family: serif;
+     border: none;
+}
+.submit:hover{
+   background-color: rgb(4, 2, 24);
+    filter: drop-shadow(1px  1px 1px rgb(0, 0, 0));
+    transform: translateY(-1px);
+    color: white;
+}
+  
+</style>
+<body>
+    <h1 class="header">
+        create new account
+    </h1>
+    
+    <br>
+    <form id="container">
+<label>first name:</label>
+<input type="text" name="username" placeholder="enter your first name" class="name1" required>
+<br><br>
+<label >second name:</label>
+<input type="text" name="username" placeholder="enter your second name " class="name2" required>
+<br><br>
+<label >Experience:</label>
+<select>
+    <option value="1_year">1 year</option>
+    <option value="2_years">2 years</option>
+    <option value="3_years">3 yaers</option>
+    <option value="4_years">4 years</option>
+    <option value="5_years">5 years</option>
+    <option value="6_years">6 years</option>
+    <option value="7_years">7 years</option>
+    <option value="8_years">8 years</option>
+    <option value="9_years">9 years/option>
+    <option value="10_years">10 years</option>
+    <option value="11_years"> 11 years</option>
+
+</select>
+<br><br>
+<label > select your  sex:</label>
+<br><br>
+<label class="sex"><input type="radio" name="sex" class="inptsex" >male</label>
+<label class="sex" ><input type="radio" name="sex" class="inptsex2">Female</label>
+<br><br><br>
+<label >email:</label> 
+<input type="email" name="email" placeholder="enter your email" class="email" required>
+<br><br>
+<label >phone number</label>
+<input type="text" name="phonenumber" placeholder="enter your phone number" class="phone" required>
+<br><br>
+<label >location</label>
+<input type="text" name="location" placeholder="enter your lacation" class="location" required>
+<br><br>
+<label >password:</label>
+<input type="password" name="password" placeholder="create password"  class="password1"   hide or show password required>
+<br><br>
+<label >confirm password:</label>
+<input type="password" name="password" placeholder="rewrite your password" class="password2" hide or show password required>
+<br><br><br>
+<input type="submit" name="submit" class="submit"  value="submit ">
+</form>
+
+<script>
+
+</script>
+</body>
+</html>
