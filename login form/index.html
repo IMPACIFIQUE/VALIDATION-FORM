@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_form</title>
+</head>
+<style>
+    
+     body{
+        background-color: rgb(18, 18, 29);
+    }
+    h1{
+        margin-left: 60vh;
+        color: aliceblue;
+        font-size: 4.5vh;
+        text-transform: capitalize;
+    }
+    #container{
+
+        background-color: rgb(52, 53, 65);
+        width: 80vh;
+        height: 40vh;
+        padding-bottom: 3vh;
+        padding-left: 5vh;
+        padding-top: 10vh;
+        margin-left: 60vh;
+        border-radius: 2vh;
+    }
+     label{
+        color: aliceblue;
+        font-size: 2.7vh;
+        text-transform: capitalize;
+        text-shadow: 3px 3px 3px rgb(2, 2, 2);
+    }
+     input{
+        width: 35vh;
+        height: 3.5vh;
+        border-radius: 6px;
+        background-color: rgb(3, 5, 18);
+        color: aliceblue;
+        font-size: 2.5vh;
+        margin-left: vh;
+    }
+    
+     .name1{
+        margin-left: 8vh;
+    }
+    .name2{
+        margin-left: 5vh;
+    }
+      .password{
+        margin-left: 10vh;
+        background-color: rgb(7, 10, 29);
+
+    }
+      ::placeholder{
+        font-size: 2vh;
+        text-align: center;
+        margin-left: 15vh;
+    }
+    .submit{
+    width: 30vh;
+    height: 5vh ;
+    color:#fcf6f6;
+    font-size: 3.3vh;
+    text-shadow: 1px 1px 1px rgb(234, 217, 217);
+    background-color: rgb(132, 65, 65);
+    text-transform: capitalize;
+    font-family: serif;
+     border: 1px solid rgb(199, 200, 210);
+}
+.submit:hover{
+   background-color: rgb(4, 2, 24);
+    filter: drop-shadow(1px  1px 1px rgb(0, 0, 0));
+    transform: translateY(-1px);
+    color: white;
+}
+</style>
+<body>
+    <h1>login</h1>
+    <form id="container" >
+        <label >first name:</label>
+        <input type="text" name="firstname" placeholder="enter first name" class="name1" required>
+        <br><br>
+        <label >second name:</label>
+        <input type="text" name="second name" placeholder="enter second name" class="name2" required>
+        <br><br>
+        <label >password:</label>
+        <input type="password" name="password" placeholder="enter password" class="password" hide or show password required>
+        <br><br><br>
+<button  id="submit" onclick="s()"  > </button>
+    </form>
+
+    <script>
+     let button = document.getElementById('submit')
+     let = document.getElementById('submit')
+
+    console.log(button);
+    button.innerHTML='send'
+
+    
+function s(){
+    addEventListener('click',
+    () => {
+         button.style.background="black";    
+         
+    setTimeout(()=>button.style.background="white",2000)     
+    }
+)
+}
+
+
+
+    </script>
+</body>
+</html>
